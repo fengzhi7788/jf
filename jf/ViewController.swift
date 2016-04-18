@@ -22,9 +22,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var xianshi: UITextField!
 
     @IBAction func add(sender: UIButton) {
+        var a=1;
+        xianshi.text=xianshi.text!+a
     }
+    
 
     @IBAction func sub(sender: UIButton) {
+        xianshi.text=xianshi.text!
     }
 }
 
