@@ -19,16 +19,50 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
+    @IBOutlet weak var shijian: UILabel!
+    var date:NSDate = NSDate()
+
+    //formatter.dateFormat = "yyyyMMddHHmmss"
+   // var dateString = formatter.stringFromDate(date)
+    
+    
+ 
+    var A3:Int32=0
+    var A2:Int32=0
+    var B3:Double=0
+    var b2:Double=0
+    var jf:Int32=0
     @IBOutlet weak var xianshi: UITextField!
 
-    @IBAction func add(sender: UIButton) {
-        var a=1;
-        xianshi.text=xianshi.text!+a
+    @IBOutlet weak var xianshi2: UITextField!
+    
+    @IBAction func A3(sender: UIButton) {
+        xianshi.text="3"
+        A3=(xianshi.text! as NSString).intValue
+        if xianshi.text==""
+        {
+            A3=3
+            xianshi.text=("\(A3)")
+        }
+        else
+        {
+            A3=A3+3
+        }
+        
+    }
+    @IBAction func A2(sender: UIButton) {
+        xianshi.text="2"
+        A3=(xianshi.text! as NSString).intValue
+    }
+    @IBAction func B3(sender: UIButton) {
+    }
+    @IBAction func B2(sender: UIButton) {
     }
     
-
-    @IBAction func sub(sender: UIButton) {
-        xianshi.text=xianshi.text!
+    @IBAction func AB1(sender: UIButton) {
     }
-}
+    }
+
 

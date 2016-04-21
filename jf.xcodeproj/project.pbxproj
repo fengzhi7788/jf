@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE4D7B5F1CC87FC200CE0BC1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D7B5E1CC87FC200CE0BC1 /* libsqlite3.tbd */; };
+		BE4D7B621CC8800F00CE0BC1 /* db.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D7B611CC8800F00CE0BC1 /* db.m */; };
 		BE6257D21CC50DA00079BD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6257D11CC50DA00079BD41 /* AppDelegate.swift */; };
 		BE6257D41CC50DA00079BD41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6257D31CC50DA00079BD41 /* ViewController.swift */; };
 		BE6257D71CC50DA00079BD41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6257D51CC50DA00079BD41 /* Main.storyboard */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE4D7B5E1CC87FC200CE0BC1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BE4D7B601CC8800E00CE0BC1 /* jf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jf-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE4D7B611CC8800F00CE0BC1 /* db.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = db.m; sourceTree = "<group>"; };
 		BE6257CE1CC50DA00079BD41 /* jf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6257D11CC50DA00079BD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE6257D31CC50DA00079BD41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4D7B5F1CC87FC200CE0BC1 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 		BE6257C51CC50DA00079BD41 = {
 			isa = PBXGroup;
 			children = (
+				BE4D7B5E1CC87FC200CE0BC1 /* libsqlite3.tbd */,
 				BE6257D01CC50DA00079BD41 /* jf */,
 				BE6257E51CC50DA00079BD41 /* jfTests */,
 				BE6257F01CC50DA00079BD41 /* jfUITests */,
@@ -103,6 +110,8 @@
 				BE6257D81CC50DA00079BD41 /* Assets.xcassets */,
 				BE6257DA1CC50DA00079BD41 /* LaunchScreen.storyboard */,
 				BE6257DD1CC50DA00079BD41 /* Info.plist */,
+				BE4D7B611CC8800F00CE0BC1 /* db.m */,
+				BE4D7B601CC8800E00CE0BC1 /* jf-Bridging-Header.h */,
 			);
 			path = jf;
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 			files = (
 				BE6257D41CC50DA00079BD41 /* ViewController.swift in Sources */,
 				BE6257D21CC50DA00079BD41 /* AppDelegate.swift in Sources */,
+				BE4D7B621CC8800F00CE0BC1 /* db.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +407,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = jf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fz.test.jf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jf/jf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +421,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = jf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fz.test.jf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jf/jf-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +497,7 @@
 				BE6257F81CC50DA00079BD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE6257F91CC50DA00079BD41 /* Build configuration list for PBXNativeTarget "jfTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +506,7 @@
 				BE6257FB1CC50DA00079BD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE6257FC1CC50DA00079BD41 /* Build configuration list for PBXNativeTarget "jfUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +515,7 @@
 				BE6257FE1CC50DA00079BD41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
