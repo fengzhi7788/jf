@@ -29,40 +29,37 @@ class ViewController: UIViewController {
     
     
  
-    var A3:Int32=0
-    var A2:Int32=0
-    var B3:Double=0
-    var b2:Double=0
-    var jf:Int32=0
+    var A:Int32=0
+    var B:Int32=0
+
     @IBOutlet weak var xianshi: UITextField!
 
     @IBOutlet weak var xianshi2: UITextField!
     
     @IBAction func A3(sender: UIButton) {
-        xianshi.text="3"
-        A3=(xianshi.text! as NSString).intValue
-        if xianshi.text==""
-        {
-            A3=3
-            xianshi.text=("\(A3)")
-        }
-        else
-        {
-            A3=A3+3
-        }
-        
+        A=A+3
+        xianshi.text=("\(A)")
     }
     @IBAction func A2(sender: UIButton) {
-        xianshi.text="2"
-        A3=(xianshi.text! as NSString).intValue
+        A=A+2
+        xianshi.text=("\(A)")
     }
     @IBAction func B3(sender: UIButton) {
+        B=B+3
+        xianshi2.text=("\(B)")
     }
     @IBAction func B2(sender: UIButton) {
-    }
-    
-    @IBAction func AB1(sender: UIButton) {
-    }
+        B=B+2
+        xianshi2.text=("\(B)")
     }
 
+    @IBAction func A1(sender: UIButton) {
+        B=B+1
+        xianshi.text=("\(A)")
+    }
+    @IBAction func B1(sender: UIButton) {
+        B=B+1
+        xianshi2.text=("\(B)")
+    }
+}
 

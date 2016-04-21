@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "jf/ViewController.swift"
-            timestampString = "482902458.874995"
+            timestampString = "482917725.32811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "A3(_:)"
             landmarkType = "5">
          </BreakpointContent>
