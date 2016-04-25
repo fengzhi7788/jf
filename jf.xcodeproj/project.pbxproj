@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE4D7B5F1CC87FC200CE0BC1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D7B5E1CC87FC200CE0BC1 /* libsqlite3.tbd */; };
-		BE4D7B621CC8800F00CE0BC1 /* db.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D7B611CC8800F00CE0BC1 /* db.m */; };
+		BE00E1361CC8CE0D002949EA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE00E1351CC8CE0D002949EA /* libsqlite3.dylib */; };
 		BE6257D21CC50DA00079BD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6257D11CC50DA00079BD41 /* AppDelegate.swift */; };
 		BE6257D41CC50DA00079BD41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6257D31CC50DA00079BD41 /* ViewController.swift */; };
 		BE6257D71CC50DA00079BD41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6257D51CC50DA00079BD41 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		BE6257DC1CC50DA00079BD41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6257DA1CC50DA00079BD41 /* LaunchScreen.storyboard */; };
 		BE6257E71CC50DA00079BD41 /* jfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6257E61CC50DA00079BD41 /* jfTests.swift */; };
 		BE6257F21CC50DA00079BD41 /* jfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6257F11CC50DA00079BD41 /* jfUITests.swift */; };
+		BEE4F4721CCE3BF5001F5756 /* dbll.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE4F4711CCE3BF5001F5756 /* dbll.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE4D7B5E1CC87FC200CE0BC1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BE00E1351CC8CE0D002949EA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		BE4D7B601CC8800E00CE0BC1 /* jf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jf-Bridging-Header.h"; sourceTree = "<group>"; };
-		BE4D7B611CC8800F00CE0BC1 /* db.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = db.m; sourceTree = "<group>"; };
 		BE6257CE1CC50DA00079BD41 /* jf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6257D11CC50DA00079BD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE6257D31CC50DA00079BD41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		BE6257ED1CC50DA00079BD41 /* jfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6257F11CC50DA00079BD41 /* jfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jfUITests.swift; sourceTree = "<group>"; };
 		BE6257F31CC50DA00079BD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE4F4711CCE3BF5001F5756 /* dbll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbll.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4D7B5F1CC87FC200CE0BC1 /* libsqlite3.tbd in Frameworks */,
+				BE00E1361CC8CE0D002949EA /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		BE6257C51CC50DA00079BD41 = {
 			isa = PBXGroup;
 			children = (
-				BE4D7B5E1CC87FC200CE0BC1 /* libsqlite3.tbd */,
+				BE00E1351CC8CE0D002949EA /* libsqlite3.dylib */,
 				BE6257D01CC50DA00079BD41 /* jf */,
 				BE6257E51CC50DA00079BD41 /* jfTests */,
 				BE6257F01CC50DA00079BD41 /* jfUITests */,
@@ -110,8 +110,8 @@
 				BE6257D81CC50DA00079BD41 /* Assets.xcassets */,
 				BE6257DA1CC50DA00079BD41 /* LaunchScreen.storyboard */,
 				BE6257DD1CC50DA00079BD41 /* Info.plist */,
-				BE4D7B611CC8800F00CE0BC1 /* db.m */,
 				BE4D7B601CC8800E00CE0BC1 /* jf-Bridging-Header.h */,
+				BEE4F4711CCE3BF5001F5756 /* dbll.m */,
 			);
 			path = jf;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 			files = (
 				BE6257D41CC50DA00079BD41 /* ViewController.swift in Sources */,
 				BE6257D21CC50DA00079BD41 /* AppDelegate.swift in Sources */,
-				BE4D7B621CC8800F00CE0BC1 /* db.m in Sources */,
+				BEE4F4721CCE3BF5001F5756 /* dbll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

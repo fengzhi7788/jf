@@ -23,12 +23,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var shijian: UILabel!
     var date:NSDate = NSDate()
-
-    //formatter.dateFormat = "yyyyMMddHHmmss"
-   // var dateString = formatter.stringFromDate(date)
-    
-    
- 
     var A:Int32=0
     var B:Int32=0
 
@@ -54,7 +48,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func A1(sender: UIButton) {
-        B=B+1
+        A=A+1
         xianshi.text=("\(A)")
     }
     @IBAction func B1(sender: UIButton) {
